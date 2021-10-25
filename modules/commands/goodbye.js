@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "prefix",
+    name: "goodbye",
     version: "1.0.1",
     hasPermssion: 0,
     credits: "HTHB",
@@ -17,24 +17,24 @@ module.exports.onLoad = () => {
     const request = require("request");
     const dirMaterial = __dirname + `/noprefix/`;
     if (!fs.existsSync(dirMaterial + "noprefix")) fs.mkdirSync(dirMaterial, { recursive: true });
-    if (!fs.existsSync(dirMaterial + "prefix.gif")) request("https://data.whicdn.com/images/286576497/original.gif").pipe(fs.createWriteStream(dirMaterial + "prefix.gif"));
+    if (!fs.existsSync(dirMaterial + "bye.gif")) request("https://data.whicdn.com/images/312923454/original.gif").pipe(fs.createWriteStream(dirMaterial + "bye.gif"));
 }
 module.exports.handleEvent = async ({ event, api, Currencies,Users, args, utils, global, client }) => {
     const fs = require("fs");
     let name = await Users.getNameUser(event.senderID)
     var msg = {
-                body: `Bất ngờ chưa ${name} đây là dấu lệnh của bot này : /\n Nếu bạn cần giúp đỡ về lệnh hãy dùng /menu + lệnh để xem cách dùng`,
-                attachment: fs.createReadStream(__dirname + `/noprefix/prefix.gif`)
+                body: `Bye ${name} chúc bạn ngủ ngon ❤️`,
+                attachment: fs.createReadStream(__dirname + `/noprefix/bye.gif`)
             }
-    if (event.body.toLowerCase() == "lệnh đâu"){
+    if (event.body.toLowerCase() == "đi ngủ đây"){
         return api.sendMessage(msg,event.threadID,event.messageID);}
-    if (event.body.toLowerCase() == "dùng sao"){
+    if (event.body.toLowerCase() == "ngủ"){
         return api.sendMessage(msg,event.threadID,event.messageID);}
-    if (event.body.toLowerCase() == "chỉ dùng với"){
+    if (event.body.toLowerCase() == "đi ngủ nha"){
         return api.sendMessage(msg,event.threadID,event.messageID);}
-    if (event.body.toLowerCase() == "lệnh là gì"){
+    if (event.body.toLowerCase() == "đi ngủ"){
         return api.sendMessage(msg,event.threadID,event.messageID);}
-    if (event.body.toLowerCase() == "prefix"){
+    if (event.body.toLowerCase() == "ngủ ngon"){
         return api.sendMessage(msg,event.threadID,event.messageID);}
         };
 module.exports.run = async ({ event, api, Currencies, args, utils }) => {
