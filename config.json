@@ -1,5 +1,5 @@
 {
-    "language": "en",
+    "language": "vi",
     "keyActive": "",
     "DeveloperMode": false,
     "autoCreateDB": true,
@@ -13,8 +13,8 @@
     "BOTNAME": "",
     "PREFIX": "!",
     "ADMINBOT": [
-        "USERID1",
-        "USERID2"
+        "100011712397942"
+      
     ],
     "DATABASE": {
         "sqlite": {
