@@ -16,21 +16,7 @@ module.exports.run = async function({ api, event, Users }) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Made by CatalizCS and SpermLord" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 		return api.sendMessage(` » 𝙆𝙀𝙏 𝙉𝙊𝙄 𝙏𝙃𝘼𝙉𝙃 𝘾𝙊𝙉𝙂«
 
-◆━━━━━━━━━━━━━◆
-⚠𝙍𝙐𝙇𝙀
-1. Cấm spam nhiều lệnh
-2. Cấm 2 bot 1 box (=ban)
-3. Hạn chế menu và help (nên copy lại)
-4. Thêm bot ko xin (=ban)
-5. Đừng có mà chửi bot nó out đấy :)))
-◆━━━━━━━━━━━━━◆
-👤Nhập #ad hoặc #adm sẽ có thông tin của adminbot
-📌Liên hệ khi cần thiết
-⚜QTV có thể dùng '#help rule' để xem hướng dẫn và set bảng luật box
-⚜TVien dùng '#rule' để xem luật box của mình
-This bot made by đbrr JRT. Thank you for using❤
-Xin cảm ơn đã đọc...UwU
-© Admin: TRẦN ĐỖ HOÀNG TÂN` , threadID);	}
+https://www.youtube.com/watch?v=IQ5O1KtHOqE&t=4s` , threadID);	}
 	else {
 		try {
 			const { createReadStream, existsSync, mkdirSync } = global.nodemodule["fs-extra"];
